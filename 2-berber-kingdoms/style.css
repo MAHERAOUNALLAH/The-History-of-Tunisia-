@@ -1,0 +1,70 @@
+
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Georgia', serif;
+    background-color: #f9f3e7;
+    color: #2b2b2b;
+    line-height: 1.6;
+  }
+  
+  .hero {
+    background: url("Berber Kingdom in Desert Sunset.png") center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+    color: white;
+  }
+  
+  .overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .overlay p {
+    font-size: 1.3rem;
+  }
+  
+  main {
+    padding: 2rem 1.5rem;
+    max-width: 900px;
+    margin: auto;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .scroll-section {
+    margin-bottom: 3rem;
+  }
+  
+  .scroll-section h2 {
+    color: #9c6b30;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+  }
+  
+  footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
