@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hannibal & Carthage | Ancient Tunisia</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.min.js"></script>
+ 
+</head>
+<body>
+    <div class="decoration top-left"></div>
+    <div class="decoration bottom-right"></div>
+
+    <header>
+        <h1>Carthage | Ancient Tunisia</h1>
+        <div class="subtitle">Polybios of Megalopolis: Chronicler of Hannibal's Wars</div>
+    </header>
+
+    <div class="container">
+        <!-- 3D Model Container -->
+        <div class="model-container">
+            <div class="loader" id="loader"></div>
+            <div class="model-title">The Greek historian Polybios</div>
+            <canvas id="model-canvas"></canvas>
+            <div class="controls-info">Drag to rotate | Scroll to zoom</div>
+        </div>
+        
+        <!-- Text Content Container -->
+        <div class="content-container">
+            <div class="section">
+                <h2>The Carthaginian Empire</h2>
+                <p>Carthage, founded by Phoenician colonists in the 9th century BCE, grew to become the dominant maritime power in the Mediterranean. Located in modern-day Tunisia, Carthage established a vast commercial empire with colonies across North Africa, Sicily, Sardinia, Corsica, and Spain.</p>
+                
+                <div class="quote">
+                    "Carthage must be destroyed!" - Cato the Elder
+                </div>
+                
+                <p>The Carthaginians were renowned for their advanced naval technology, impressive harbor engineering, and prosperous trade networks that stretched across the Mediterranean world. Their capital city featured a double harbor system that was considered an engineering marvel of the ancient world.</p>
+            </div>
+
+
+            <div class="section">
+                <h2> Polybios: Historian of Carthage</h2>
+                <p>The Greek historian Polybios (c. 200–118 BCE) provides our most complete contemporary account of Hannibal's campaigns and the Punic Wars. As a political hostage in Rome, he gained unique access to Roman and Carthaginian sources, creating balanced historical records that remain invaluable today.</p>
+                <div class="quote" >
+                    "There is no more ready corrective of conduct than knowledge of the past."
+                </div>
+                <p>Polybios' <em>Histories</em> particularly shine when detailing:</p>
+                <ul style="padding-left: 25px; margin: 15px 0; list-style-type: none;">
+                    <li><i class="fas fa-chevron-right" style="color: #c2a878; margin-right: 10px;"></i> Hannibal's Alpine crossing (Book 3)</li>
+                    <li><i class="fas fa-chevron-right" style="color: #c2a878; margin-right: 10px;"></i> The political structure of Carthage (Book 6)</li>
+                    <li><i class="fas fa-chevron-right" style="color: #c2a878; margin-right: 10px;"></i> The Battle of Cannae (Book 3)</li>
+                    <li><i class="fas fa-chevron-right" style="color: #c2a878; margin-right: 10px;"></i> Comparative analysis of Roman vs. Carthaginian tactics</li>
+                </ul>
+
+
+
+
+
+            </div>
+            
+            <div class="section">
+                <h2>Hannibal's Legacy</h2>
+                <p>Hannibal Barca (247-183 BCE), son of Hamilcar Barca, is considered one of the greatest military commanders in history. His most famous achievement was leading the Carthaginian army, including war elephants, across the Alps to attack Rome during the Second Punic War (218-201 BCE).</p>
+                
+                <div class="facts-grid">
+                    <div class="fact-card">
+                        <h3>Military Genius</h3>
+                        <p>Hannibal won several decisive victories against Rome, including the Battle of Cannae where he encircled and annihilated a much larger Roman force.</p>
+                    </div>
+                    <div class="fact-card">
+                        <h3>Strategic Mastery</h3>
+                        <p>His use of terrain, psychological warfare, and understanding of enemy weaknesses made him nearly invincible on the battlefield.</p>
+                    </div>
+                    <div class="fact-card">
+                        <h3>The Alpine Crossing</h3>
+                        <p>In 218 BCE, Hannibal led 38,000 infantry, 8,000 cavalry, and 37 war elephants through the treacherous Alps to surprise Rome from the north.</p>
+                    </div>
+                    <div class="fact-card">
+                        <h3>Enduring Legacy</h3>
+                        <p>Hannibal's tactics are still studied in military academies worldwide, and he remains a symbol of strategic brilliance and determination.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Historical Timeline</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-year">814 BCE</div>
+                        <p>Traditional founding date of Carthage by Phoenician settlers from Tyre.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">264 BCE</div>
+                        <p>First Punic War begins between Rome and Carthage over control of Sicily.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">247 BCE</div>
+                        <p>Hannibal Barca is born in Carthage (modern-day Tunisia).</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">218 BCE</div>
+                        <p>Hannibal begins his legendary crossing of the Alps to attack Rome.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">216 BCE</div>
+                        <p>Battle of Cannae - Hannibal defeats a Roman army twice his size.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">202 BCE</div>
+                        <p>Battle of Zama - Hannibal is defeated by Scipio Africanus.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">146 BCE</div>
+                        <p>Destruction of Carthage by Rome after the Third Punic War.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Carthaginian Civilization</h2>
+                <p>The Carthaginians developed a sophisticated society with:</p>
+                <ul style="padding-left: 20px; margin: 15px 0;">
+                    <li>Advanced shipbuilding and navigation techniques</li>
+                    <li>Innovative agricultural practices documented in Mago's 28-volume treatise</li>
+                    <li>A unique political system with elected leaders (Suffetes) and councils</li>
+                    <li>Impressive architecture including the circular military harbor (Cothon)</li>
+                    <li>Religious practices centered on deities like Baal Hammon and Tanit</li>
+                </ul>
+                <p>Despite Rome's systematic destruction of Carthage, archaeological excavations in modern Tunisia continue to reveal the grandeur of this ancient civilization, including the famous Tophet sanctuary and the Antonine Baths.</p>
+            </div>
+            <div class="section">
+                <h2><i class="fas fa-map-marked-alt"></i> The Capital: Carthage</h2>
+                <p>At the heart of this vast empire stood its namesake capital, Carthage, strategically positioned on the Gulf of Tunis. This aerial view reveals the city's legendary dual harbors - the outer commercial port welcoming ships from across the Mediterranean, and the inner circular Cothon that sheltered Carthage's formidable navy. The towering Byrsa citadel, visible at center, housed the city's most sacred temples and served as the political nucleus where suffetes (elected leaders) governed. Notice how the city walls extend toward the fertile hinterlands that fed Carthage's population of half a million, while seaward fortifications protected against naval assaults.</p>
+            </div>
+            
+            <img src="carthagemap.png" alt="Detailed reconstruction of ancient Carthage's urban layout" class="historical-map">
+
+            <div class="section visualization-intro">
+                <h2><i class="fas fa-binoculars"></i> Visualizing Punic Carthage</h2>
+                <p>This interactive reconstruction reveals how Carthage appeared at its zenith (3rd century BCE), when Polybios would have known it. Explore these key features:</p>
+            
+                
+                
+            </div>
+            
+            <img src="visualization.jpg" alt="Interactive reconstruction of ancient Carthage" class="historical-map" id="carthageMap">
+
+        </div>
+    </div>
+     
+    <footer>
+        <p>Experience the legacy of Ancient Carthage and Hannibal's extraordinary military campaigns</p>
+        <p>Historical 3D Visualization Project | Carthage, Tunisia</p>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
